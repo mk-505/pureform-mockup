@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import heroBg from "@/assets/Website Photos/studio_equipment_web.jpg";
+import heroBg from "@/assets/Website Photos/studio_equipment.JPG";
 
 const HeroSection = () => {
   const scrollTo = (href: string) => {
@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img src={heroBg} alt="Pureform Movement Studio" className="w-full h-full object-cover" width={1920} height={1080} />
         {/* Soft overlay */}
-        <div className="absolute inset-0 bg-neutral-900/60" />
+        <div className="absolute inset-0 bg-neutral-900/80" />
       </div>
 
       <div className="relative z-10 text-center max-w-3xl mx-auto section-padding translate-y-8 md:translate-y-12">

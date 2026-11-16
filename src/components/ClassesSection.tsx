@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import reformerImg from "@/assets/Website Photos/pilates_reformer_form_web.jpg";
-import matImg from "@/assets/Website Photos/one_person_mat_pilates_web.jpg";
-import yogaImg from "@/assets/Website Photos/one_person_mat_pilates2_web.jpg";
-import barreImg from "@/assets/Website Photos/barre_web.jpg";
+import reformerImg from "@/assets/Website Photos/reformer_pilates_class.jpg";
+import matImg from "@/assets/Website Photos/mat_pilates.jpg";
+import yogaImg from "@/assets/Website Photos/one_person_yoga.jpg";
+import barreImg from "@/assets/Website Photos/barre.JPG";
 
 const classes = [
   {

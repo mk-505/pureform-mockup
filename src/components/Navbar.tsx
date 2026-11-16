@@ -83,14 +83,22 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-background/98 backdrop-blur-md border-b border-border overflow-hidden"
+            className={`lg:hidden backdrop-blur-md border-b overflow-hidden max-h-[calc(100dvh-4rem)] overflow-y-auto ${
+              scrolled
+                ? "bg-background/98 border-border"
+                : "bg-neutral-900/75 border-white/15"
+            }`}
           >
             <div className="flex flex-col items-center gap-5 py-8">
               {navLinks.map((link) => (
                 <button
                   key={link.href}
                   onClick={() => scrollTo(link.href)}
-                  className="font-body text-base font-medium tracking-wide text-background hover:text-cream/80 transition-colors"
+                  className={`font-body text-base font-medium tracking-wide transition-colors ${
+                    scrolled
+                      ? "text-foreground hover:text-primary"
+                      : "text-white hover:text-white/80"
+                  }`}
                 >
                   {link.label}
                 </button>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import privatesImg from "@/assets/Website Photos/one_person_mat_pilates2_web.jpg";
+import privatesImg from "@/assets/Website Photos/mat_pilates_friendship.jpg";
 
 const appointmentUrl = "https://momence.com/appointments/appointment-reservation/123151";
 

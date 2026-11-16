@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import studioImg from "@/assets/Website Photos/studio_equipment_web.jpg";
-import reformerImg from "@/assets/Website Photos/pilates_reformer_form_web.jpg";
+import studioImg from "@/assets/Website Photos/pureform_movement_pilates_team.jpg";
+import reformerImg from "@/assets/Website Photos/pilates_reformer_form.jpg";
 import studioVideo from "@/assets/Website Photos/pilates_promo.mov";
 
 const fadeInUp = {
