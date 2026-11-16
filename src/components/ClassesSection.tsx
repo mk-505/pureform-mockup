@@ -1,28 +1,28 @@
 import { motion } from "framer-motion";
-import reformerImg from "@/assets/reformer-pilates.jpg";
-import matImg from "@/assets/mat-pilates.jpg";
-import yogaImg from "@/assets/yoga.jpg";
-import barreImg from "@/assets/barre-pilates.jpg";
+import reformerImg from "@/assets/Website Photos/pilates_reformer_form_web.jpg";
+import matImg from "@/assets/Website Photos/one_person_mat_pilates_web.jpg";
+import yogaImg from "@/assets/Website Photos/one_person_mat_pilates2_web.jpg";
+import barreImg from "@/assets/Website Photos/barre_web.jpg";
 
 const classes = [
   {
     title: "Reformer Pilates",
-    description: "Low-impact, strength-focused pilates on the reformer for a full-body workout that builds control, stability, and confidence.",
+    description: "Build strength, improve flexibility, and enhance stability through controlled, resistance-based movements on the reformer.",
     image: reformerImg,
   },
   {
     title: "Mat Pilates",
-    description: "Grounded, core-focused movement designed to improve strength, posture, and body awareness.",
+    description: "Strengthen your core, improve posture, and build endurance through intentional, low-impact movements using body weight and props on the mat.",
     image: matImg,
   },
   {
     title: "Yoga (Stretch & Flow)",
-    description: "A restorative, feel-good flow that combines stretch, breath, and mindful movement.",
+    description: "Reconnect your mind and body through mindful movement, breathwork, and gentle stretching designed to restore balance and improve flexibility.",
     image: yogaImg,
   },
   {
-    title: "Barre Pilates",
-    description: "A sculpting, energizing class that blends pilates-inspired movement with barre-based burn.",
+    title: "Barre",
+    description: "Sculpt, strengthen, and energize through ballet-inspired movements, controlled pulses, and targeted exercises using the barre.",
     image: barreImg,
   },
 ];

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Smartphone } from "lucide-react";
-import appMockup from "@/assets/app-mockup.jpg";
+import appMockup from "@/assets/Website Photos/app_photo1.PNG";
 
 const AppDownloadSection = () => (
   <section className="section-spacing section-padding bg-background">

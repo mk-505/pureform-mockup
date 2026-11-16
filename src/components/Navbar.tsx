@@ -90,7 +90,7 @@ const Navbar = () => {
                 <button
                   key={link.href}
                   onClick={() => scrollTo(link.href)}
-                  className="font-body text-base font-light tracking-wide text-foreground/70 hover:text-primary transition-colors"
+                  className="font-body text-base font-medium tracking-wide text-background hover:text-cream/80 transition-colors"
                 >
                   {link.label}
                 </button>

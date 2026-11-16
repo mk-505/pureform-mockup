@@ -11,6 +11,7 @@ import FAQSection from "@/components/FAQSection";
 import SocialSection from "@/components/SocialSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import ReviewsSection from "@/components/ReviewsSection";
 
 const Index = () => (
   <div className="min-h-screen">
@@ -20,6 +21,7 @@ const Index = () => (
     <AboutSection />
     <ClassesSection />
     <MembershipsSection />
+    <ReviewsSection />
     <PrivatesSection />
     <GiftCardSection />
     <AppDownloadSection />

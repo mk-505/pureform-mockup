@@ -42,6 +42,11 @@
     --cream: 40 30% 95%;
     --cream-dark: 40 15% 90%;
 
+    --momenceReviewColorBackground: hsl(var(--background));
+    --momenceBorder: 1px solid hsl(var(--border));
+    --momenceBorderRadius: 12px;
+    --momenceBoxShadow: 0 4px 18px rgba(40, 55, 45, 0.06);
+
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -75,4 +80,15 @@
   .section-spacing {
     @apply py-16 md:py-24 lg:py-32;
   }
+}
+
+/* Keep Momence review typography consistent with the site's body text. */
+#momence-plugin-reviews,
+#momence-plugin-reviews * {
+  font-family: 'Outfit', sans-serif !important;
+}
+
+#momence-plugin-reviews,
+#momence-plugin-reviews > * {
+  background-color: transparent !important;
 }

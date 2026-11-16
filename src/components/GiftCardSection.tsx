@@ -17,14 +17,6 @@ const GiftCardSection = () => (
         <p className="font-body text-sm text-muted-foreground font-light mb-8 max-w-md mx-auto leading-relaxed">
           Share the experience of Pureform Movement with someone you love. Gift cards are perfect for birthdays, celebrations, or just because.
         </p>
-        {/* Momence outlink placeholder */}
-        <a href="#" className="inline-block px-8 py-3 rounded-full bg-primary text-primary-foreground font-body text-sm font-medium tracking-wide hover:opacity-90 transition-opacity">
-          Buy a Gift Card
-        </a>
-        {/* Momence embed placeholder */}
-        <div className="mt-8 p-6 rounded-2xl border border-border bg-background">
-          <p className="font-body text-xs text-muted-foreground tracking-wider uppercase">Momence Gift Card Embed Area</p>
-        </div>
       </motion.div>
     </div>
   </section>

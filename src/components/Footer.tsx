@@ -44,10 +44,21 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <p className="font-body text-xs tracking-[0.2em] uppercase text-background/40 mb-4">Contact</p>
-            <div className="space-y-2 font-body text-sm font-light text-background/60">
-              <p>2 Marconi Crt, Unit 16, Bolton</p>
-              <p>647-924-7700</p>
-              <p>info@pureformmovement.ca</p>
+            <div className="space-y-4 font-body text-sm font-light text-background/60">
+              <div>
+                <p className="text-background/80">Bolton</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=2%20Marconi%20Ct%20Unit%2016%2C%20Bolton%2C%20ON%20L7E%201E5" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">
+                  2 Marconi Ct, Unit 16, Bolton, ON L7E 1E5
+                </a>
+              </div>
+              <div>
+                <p className="text-background/80">Southfields, Caledon</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=439%20Dougall%20Ave%20Unit%20101%2C%20Caledon%2C%20ON%20L7C%204A6" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">
+                  439 Dougall Ave, Unit 101, Caledon, ON L7C 4A6
+                </a>
+              </div>
+              <a href="tel:+16479247700" className="block hover:text-background transition-colors">(647) 924-7700</a>
+              <a href="mailto:info@pureformmovement.ca" className="block hover:text-background transition-colors">info@pureformmovement.ca</a>
             </div>
           </div>
 
