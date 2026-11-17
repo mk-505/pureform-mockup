@@ -21,8 +21,8 @@ const Index = () => (
     <AboutSection />
     <ClassesSection />
     <MembershipsSection />
-    <ReviewsSection />
     <PrivatesSection />
+    <ReviewsSection />
     <GiftCardSection />
     <AppDownloadSection />
     <FAQSection />

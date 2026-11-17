@@ -19,7 +19,7 @@ const ReviewsSection = () => {
   }, []);
 
   return (
-    <section className="section-spacing section-padding bg-background">
+    <section id="reviews" className="section-spacing section-padding bg-background">
       <div className="max-w-5xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-10">
           <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4 font-medium">Kind Words</p>

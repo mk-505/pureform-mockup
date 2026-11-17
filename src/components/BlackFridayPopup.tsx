@@ -25,7 +25,6 @@ const BlackFridayPopup = () => {
         className="max-h-[calc(100dvh-2rem)] max-w-md overflow-y-auto rounded-2xl border border-sage/20 bg-cream p-0 shadow-2xl"
       >
         <div className="bg-sage px-8 py-7 text-center text-cream sm:px-10">
-          <p className="font-body text-[0.65rem] font-medium uppercase tracking-[0.3em] text-cream/75">Pop Up!</p>
           <DialogHeader className="mt-3 space-y-0">
             <DialogTitle className="font-display text-4xl font-light leading-tight sm:text-5xl">
               Black Friday

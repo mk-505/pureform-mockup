@@ -7,9 +7,12 @@ const navLinks = [
   { label: "Classes", href: "#classes" },
   { label: "Memberships", href: "#memberships" },
   { label: "Privates", href: "#privates" },
+  { label: "Reviews", href: "#reviews" },
+  { label: "Gift Cards", href: "#gift-cards" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
+const bookingUrl = "https://momence.com/u/pureform-movement-NryJ6D";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -58,12 +61,14 @@ const Navbar = () => {
               {link.label}
             </button>
           ))}
-          <button
-            onClick={() => scrollTo("#classes")}
+          <a
+            href={bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-2 px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-body text-sm font-medium tracking-wide hover:opacity-90 transition-opacity"
           >
             Book a Class
-          </button>
+          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -103,12 +108,14 @@ const Navbar = () => {
                   {link.label}
                 </button>
               ))}
-              <button
-                onClick={() => scrollTo("#classes")}
+              <a
+                href={bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-2 px-8 py-3 rounded-full bg-primary text-primary-foreground font-body text-sm font-medium tracking-wide"
               >
                 Book a Class
-              </button>
+              </a>
             </div>
           </motion.div>
         )}

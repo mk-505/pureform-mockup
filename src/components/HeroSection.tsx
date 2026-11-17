@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import heroBg from "@/assets/Website Photos/studio_equipment.JPG";
 
+const bookingUrl = "https://momence.com/u/pureform-movement-NryJ6D";
+
 const HeroSection = () => {
   const scrollTo = (href: string) => {
     const el = document.querySelector(href);
@@ -44,12 +46,14 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.45 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6"
         >
-          <button
-            onClick={() => scrollTo("#classes")}
+          <a
+            href={bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-3.5 rounded-full bg-cream text-foreground font-body text-sm font-medium tracking-wide hover:bg-cream-dark transition-colors"
           >
             Book a class
-          </button>
+          </a>
           <button
             onClick={() => scrollTo("#memberships")}
             className="px-8 py-3.5 rounded-full border border-cream/50 text-cream font-body text-sm font-medium tracking-wide hover:bg-cream/10 transition-colors"

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import privatesImg from "@/assets/Website Photos/mat_pilates_friendship.jpg";
 
-const appointmentUrl = "https://momence.com/appointments/appointment-reservation/123151";
+const appointmentUrl = "https://momence.com/u/pureform-movement-NryJ6D";
 
 const PrivatesSection = () => (
   <section id="privates" className="section-spacing section-padding bg-muted/50">

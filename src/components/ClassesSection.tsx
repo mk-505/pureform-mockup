@@ -4,6 +4,8 @@ import matImg from "@/assets/Website Photos/mat_pilates.jpg";
 import yogaImg from "@/assets/Website Photos/one_person_yoga.jpg";
 import barreImg from "@/assets/Website Photos/barre.JPG";
 
+const bookingUrl = "https://momence.com/u/pureform-movement-NryJ6D";
+
 const classes = [
   {
     title: "Reformer Pilates",
@@ -71,9 +73,10 @@ const ClassesSection = () => (
               <p className="font-body text-sm text-muted-foreground font-light leading-relaxed mb-5">
                 {cls.description}
               </p>
-              {/* Momence outlink placeholder */}
               <a
-                href="#"
+                href={bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block w-full text-center px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-body text-sm font-medium tracking-wide hover:opacity-90 transition-opacity"
               >
                 Book This Class
