@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between section-padding py-4">
         <button
           onClick={() => scrollTo("#home")}
-          className={`font-display text-2xl md:text-3xl font-semibold tracking-wide ${
+          className={`shrink-0 whitespace-nowrap font-display text-2xl md:text-3xl font-semibold tracking-wide ${
             scrolled ? "text-foreground" : "text-cream"
           }`}
         >
@@ -49,12 +49,12 @@ const Navbar = () => {
         </button>
 
         {/* Desktop */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden xl:flex shrink-0 items-center gap-4 2xl:gap-6">
           {navLinks.map((link) => (
             <button
               key={link.href}
               onClick={() => scrollTo(link.href)}
-              className={`font-body text-sm font-light tracking-wide transition-colors ${
+              className={`shrink-0 whitespace-nowrap font-body text-sm font-light tracking-wide transition-colors ${
                 scrolled ? "text-foreground/70 hover:text-primary" : "text-cream/90 hover:text-cream"
               }`}
             >
@@ -65,7 +65,7 @@ const Navbar = () => {
             href={bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-body text-sm font-medium tracking-wide hover:opacity-90 transition-opacity"
+            className="ml-1 shrink-0 whitespace-nowrap px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-body text-sm font-medium tracking-wide hover:opacity-90 transition-opacity"
           >
             Book a Class
           </a>
@@ -74,7 +74,7 @@ const Navbar = () => {
         {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className={`lg:hidden ${scrolled ? "text-foreground" : "text-cream"}`}
+          className={`xl:hidden ${scrolled ? "text-foreground" : "text-cream"}`}
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -88,7 +88,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className={`lg:hidden backdrop-blur-md border-b overflow-hidden max-h-[calc(100dvh-4rem)] overflow-y-auto ${
+            className={`xl:hidden backdrop-blur-md border-b overflow-hidden max-h-[calc(100dvh-4rem)] overflow-y-auto ${
               scrolled
                 ? "bg-background/98 border-border"
                 : "bg-neutral-900/75 border-white/15"
