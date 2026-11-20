@@ -47,7 +47,7 @@ const PrivatesSection = () => (
             <a href={appointmentUrl} target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 rounded-full border border-primary text-primary font-body text-sm font-medium tracking-wide hover:bg-primary/5 transition-colors">
               Book a Semi-Private
             </a>
-            <a href={appointmentUrl} target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 rounded-full border border-border text-foreground font-body text-sm font-medium tracking-wide hover:bg-muted transition-colors">
+            <a href="#contact" className="px-6 py-2.5 rounded-full border border-border text-foreground font-body text-sm font-medium tracking-wide hover:bg-muted transition-colors">
               Inquire About Events
             </a>
           </div>

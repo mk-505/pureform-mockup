@@ -4,12 +4,39 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
+  const [isSending, setIsSending] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Placeholder submit
-    alert("Thank you for your message! We'll be in touch soon.");
-    setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+    setIsSending(true);
+    setSubmitMessage("");
+
+    try {
+      const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          service_id: "service_ygtofuo",
+          template_id: "template_uleh0mj",
+          user_id: "fj2XubDt5j0RqP-XG",
+          template_params: form,
+        }),
+      });
+
+      if (!response.ok) {
+        const error = await response.text();
+        throw new Error(error || "EmailJS could not send your message.");
+      }
+
+      setSubmitMessage("Thank you for your message! We'll be in touch soon.");
+      setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+    } catch (error) {
+      console.error("EmailJS contact form error:", error);
+      setSubmitMessage("Sorry, your message couldn't be sent. Please try again or email info@pureformmovement.ca.");
+    } finally {
+      setIsSending(false);
+    }
   };
 
   const inputClass =
@@ -149,10 +176,14 @@ const ContactSection = () => {
             />
             <button
               type="submit"
+              disabled={isSending}
               className="w-full px-6 py-3.5 rounded-full bg-primary text-primary-foreground font-body text-sm font-medium tracking-wide hover:opacity-90 transition-opacity"
             >
-              Send Message
+              {isSending ? "Sending…" : "Send Message"}
             </button>
+            <p role="status" aria-live="polite" className="font-body text-sm text-muted-foreground">
+              {submitMessage}
+            </p>
           </motion.form>
         </div>
       </div>
