@@ -24,12 +24,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const scrollTo = (href: string) => {
-    setMobileOpen(false);
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -39,27 +33,27 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between section-padding py-4">
-        <button
-          onClick={() => scrollTo("#home")}
+        <a
+          href="#home"
           className={`shrink-0 whitespace-nowrap font-display text-2xl md:text-3xl font-semibold tracking-wide ${
             scrolled ? "text-foreground" : "text-cream"
           }`}
         >
           Pureform Movement
-        </button>
+        </a>
 
         {/* Desktop */}
         <div className="hidden xl:flex shrink-0 items-center gap-4 2xl:gap-6">
           {navLinks.map((link) => (
-            <button
+            <a
               key={link.href}
-              onClick={() => scrollTo(link.href)}
+              href={link.href}
               className={`shrink-0 whitespace-nowrap font-body text-sm font-light tracking-wide transition-colors ${
                 scrolled ? "text-foreground/70 hover:text-primary" : "text-cream/90 hover:text-cream"
               }`}
             >
               {link.label}
-            </button>
+            </a>
           ))}
           <a
             href={bookingUrl}
@@ -96,9 +90,10 @@ const Navbar = () => {
           >
             <div className="flex flex-col items-center gap-5 py-8">
               {navLinks.map((link) => (
-                <button
+                <a
                   key={link.href}
-                  onClick={() => scrollTo(link.href)}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
                   className={`font-body text-base font-medium tracking-wide transition-colors ${
                     scrolled
                       ? "text-foreground hover:text-primary"
@@ -106,7 +101,7 @@ const Navbar = () => {
                   }`}
                 >
                   {link.label}
-                </button>
+                </a>
               ))}
               <a
                 href={bookingUrl}
